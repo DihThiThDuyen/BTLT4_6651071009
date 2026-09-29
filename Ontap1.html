@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ôn tập buổi 1 của LyLy</title>
+    </head>
+    <body>
+        <h1 align="center">Ôn tập buổi 1 của LyLy</h1>
+        <h2 align="left">Tạo form và các điếu khiển</h2>
+
+        <form method="post">
+            <input type="text" name="username" placeholder="Nhập tên bạn">
+            <br>
+            <label>Nhập mật khẩu: </label><br>
+            <input type="password" name="password">
+            <button type="submit" name="submit"> Gửi</button>
+        </form>
+        <br><br>
+        <h2 align="right">Tạo bảng</h2>
+        <table border="1" align="right" bgcolor="#FFFFFF">
+            <tr>
+                <th>Thứ 2</th>
+                <th>Thứ 3</th>
+                <th>Thứ 4</th>
+            </tr>
+            <tr>
+                <td>Học lập trình</td>
+                <td>Học lập trình</td>
+                <td>Học lập trình</td>
+            </tr>
+        </table>
+
+        <h2 align="left" style="color:Blue">Tạo danh sách</h2>
+        <ul >
+            <li>LY ĐẸP GÁI</li>
+            <li>LY ĐẸP Trai</li>
+        </ul>
+        <ol type="1">
+            <li>LY ĐẸP GÁI</li>
+            <li>LY ĐẸP Trai</li>
+        </ol>
+
+        <h2 align="center" style="color:Red">Tạo bảng gom hàng</h2>
+        <table border="1">
+            <tr>
+                <th>Tên</th>
+                <th>Thuộc tính</th>
+            
+            </tr>
+
+            <tr>
+                <td  rowspan="2">Ly</td>
+                <td>đẹp gái</td>
+                <tr>
+                    <td>đẹp trai</td>
+                </tr>
+            </tr>
+            
+            <tr>
+                <td rowspan="2">Lita</td>
+                <td>Kaimiku</td>
+                <tr>
+                    <td>Kaitomiku</td>
+                </tr>
+            </tr>
+
+
+        </table>
+        <h2 align="center" style="color:Red">Tạo bảng gom cột</h2>
+        <table border="1">
+            <tr>
+                <th>Tên</th>
+                <th colspan="2">Thuộc tính</th>
+            
+            </tr>
+
+            <tr>
+                <td>Ly</td>
+                <td>đẹp gái</td>
+                <td>đẹp trai</td>
+            </tr>
+            
+            <tr>
+                <td>Lita</td>
+                <td>Kaimiku</td>
+                <td>Kaitomiku</td>
+            </tr>
+        </table>
+
+        <h2>Tạo liên kết ảnh</h2>
+        <h3>Ảnh kaimiku:</h3>
+        <img src="https://static.wikia.nocookie.net/shipping/images/8/8f/Deemo_cytus_kaimiku.jpeg/revision/latest?cb=20260620041450" alt="Ảnh kaimiku real vãi">
+        <br>
+        <a href="https://shipping.fandom.com/wiki/KaiMiku" target="_blank"> Shipdom Kaimiku</a>
+
+        <h2>Tạo cái khung mà có form trong</h2>
+        <form>
+            <fieldset>
+                <legend>Thông tin đăng nhập</legend>
+                <label for="username">Tên đăng nhập: </label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Mật khẩu: </label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Đăng nhập">
+            </fieldset>
+        </form>
+        <br><br>
+        <h2 align="Center" style="color:green">Loại 1: selection: dạng mũi tên bấm rồi chọn</h2>
+        <h3>Bạn là ai trong số người này:</h3>
+        <select name="ten" id="ten">
+                <option value="Ly">Ly</option>
+                <option value="Lita">Lita</option>
+                <option value="Kaimiku">Kaimiku</option> 
+                <option value="martha">Martha</option>
+                <option value="naib">Naib</option>
+        </select>
+        <h3>Bạn thích ai? (size)</h3>
+        <select name="ten" id="ten" size="2">
+                <option value="Ly">Ly</option>
+                <option value="Lita">Lita</option>
+                <option value="Kaimiku">Kaimiku</option>
+                <option value="martha">Martha</option>
+                <option value="naib">Naib</option>
+        </select>
+        <br><br>
+        <h3>Bạn chọn ai làm bạn (multiple) </h3>
+        <select name="ten" id="ten" multiple>
+                <option value="Ly">Ly</option>
+                <option value="Lita">Lita</option>
+                <option value="Kaimiku">Kaimiku</option>
+                <option value="martha">Martha</option>
+                <option value="naib">Naib</option>
+        </select>
+        <br><br>
+        <h3>Bạn muốn đi chơi với ai (both)</h3>
+        <select name="ten" id="ten" size="2" multiple>
+            <option>Ly</option>
+            <option>Lita</option>  
+            <option>Kaimiku</option>
+            <option value="martha">Martha</option>
+                <option value="naib">Naib</option>
+        </select>
+
+        <h3>bạn thấy những tên nào hay</h3>
+        <input type="checkbox" name="name" value="ly">ly (ấn ly thì không tick box)
+        <br><input type="checkbox" name="name" id="lita" value="lita">
+        <label for="lita">lita (ấn lita thì tick box)</label>
+
+        <h2>OPTIONGROUP cho select</h2>
+        <br><br>
+        <select name="ten" id="ten" multiple>
+        <optgroup label="Tên bạn">
+            <option value="Ly">Ly</option>
+            <option value="Lita">Lita</option>
+        </optgroup>
+        <optgroup label="Tên người khác">
+            <option value="Kaimiku">Kaimiku</option>
+            <option value="martha">Martha</option>
+            <option value="naib">Naib</option>
+</select>
+<br><br>
+<select name="ten" id="ten">
+        <optgroup label="Tên người khác">
+            <option value="Kaimiku">Kaimiku</option>
+            <option value="martha">Martha</option>
+            <option value="naib">Naib</option>
+            <option value="Kaimiku">Kaimiku</option>
+            <option value="martha">Martha</option>
+            <option value="naib">Naib</option>
+        </optgroup>
+        </select>
+    </body>
+</html>
